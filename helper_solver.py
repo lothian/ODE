@@ -20,7 +20,7 @@ class RK(object):
         self.c = method.c
 
         self.counter = 0
-        self.solve()
+#        self.solve()
 
     def stages(self,t_n,y_n):
         s = len(self.c)
@@ -68,7 +68,7 @@ class RK_adaptive(object):
 
         self.counter = 0
         self.stepsize = []
-        self.solve()
+#        self.solve()
 
     def stages(self,ti,yi):
         s = len(self.c)
@@ -137,7 +137,7 @@ class DIRK(object):
             if sum(self.b)-1>1e-12:
                 print('Warning: The ODE solution may have more than one solution')
             self.counter = 0
-            self.solve()
+#            self.solve()
 
 
     def stages(self,ti,yi):
@@ -197,7 +197,7 @@ class IRK(object):
         self.guess = guess
         self.newton = newton
 
-        self.solve()
+#        self.solve()
 
 
     def stages(self,t_n,y_n):
